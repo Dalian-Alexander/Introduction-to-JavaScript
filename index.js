@@ -17,7 +17,13 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 18
+    if(votingAge < 18){
+     console.log('you cant vote');
+    } 
+    else{
+      console.log('you can vote for your favorite candidate');
+    }
 
 
 /*
@@ -30,6 +36,13 @@ Do the following:
 
    HINT: no function required
 */
+// let numA = 2;
+// let numB = 4;
+// if(numbB > 2){
+//   numA = numA + numB;
+// }
+// else numA = numA - numB;
+// }
 
 
 
@@ -58,10 +71,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b){
+    return(a * b);
+}
 
+console.log(multiply(1,3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -201,8 +215,18 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if(score >= 90){
+    return 'you got an A';
+  } else if(score >= 80){
+    return 'you got a B';
+  } else if(score >= 70){
+    return 'you got a C';
+  } else if(score >= 60){
+    return 'you got a D';
+  } else{
+      return 'you got an F';
+    } 
   }
   
   
